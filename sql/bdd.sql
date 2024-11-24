@@ -1,0 +1,12 @@
+-- INSERT INTO jewelry (name,description,price,quantity,image) VALUES (
+--     'rashmi bracelet',
+--     'Made in Paris, with its sculptural, imperfect shapes, the Rashmi bangle is ideal for wearing as an accumulation. This unique bracelet will add a timeless touch to all your outfits. Available in a range of colors, Rashmi is the perfect gift!
+--     History of a Nûr Jahân collection:
+--     India, calm, sensitive and luminous beauty.
+--     Mixture of opposites, infinite riches.
+--     Rare and precious humanity, deep and sincere beliefs.
+--     Grace of a country. India, the light of the world.',
+--      130,
+--      3, 
+--      "../assets/rashmibracelet.jpg"
+-- );
