@@ -1,7 +1,9 @@
 # Ici on lui dit je veux utiliser une boîte toute prête qui contient PHP et Apache
 FROM php:7.4-apache
 
-# Cette ligne dit à Docker : "J'ai besoin d'ajouter quelque chose dans la boîte, un outil appelé mysqli, qui permet à PHP de parler à une base de données MySQL".
+# Installer les extensions PDO et PDO MySQL pour permettre l'utilisation de PDO avec MySQL
+RUN docker-php-ext-install pdo pdo_mysql
+
 RUN docker-php-ext-install mysqli
 
 # Copier le contenu du répertoire (tes fichiers index.html, style.css ...) actuel dans le répertoire du serveur Apache
