@@ -1,10 +1,10 @@
 <header class="header-site">
     <h1>ELISE TSIKIS</h1>
     <div class="nav-header">
-        <a href="../page//wishlist.php">
+        <a href="../page/wishlist.php">
             <i class="fa-regular fa-heart" style="color: #323334;"></i>
         </a>
-        <a href="../page//connexion.php">
+        <a href="../page/connexion.php">
             <i class="fa-regular fa-user" style="color: #323334;"></i>
         </a>
         <a href="../page/panier.php">
