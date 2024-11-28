@@ -1,4 +1,7 @@
 <?php
+// Démarrer la session avant toute autre chose
+session_start();
+
 if (!empty($_POST)) {
 
     // Tentative (try) de connexion à la base de données avec PDO
@@ -42,6 +45,7 @@ if (!empty($_POST)) {
     }
 
     // VALIDATION PASSWORD 
+    // Vérifie si le mot de passe est vide ou s'il ne respecte pas le format requis
     if (empty($_POST['password-register'])) {
         $errors['password-register'] = "Le mot de passe est obligatoire.";
     } else if (!preg_match("/^(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,}$/", $_POST['password-register'])) {
@@ -62,6 +66,13 @@ if (!empty($_POST)) {
             ':email' => $_POST['email-register'],
             ':password' => $hashedPassword
         ]);
+
+        $_SESSION['email'] = $_POST['email-register'];
+        $_SESSION['firstname'] = $_POST['firstname-register'];
+        $_SESSION['lastname'] = $_POST['lastname-register'];
+        // Redirection après validation du formulaire 
+        header("Location: ../page/connexion.php");
+        exit();
     }
     var_dump($errors);
 }

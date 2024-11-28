@@ -1,3 +1,5 @@
+<?php include './includes/header.php'; ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -6,12 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200..1000&family=Tenor+Sans&display=swap" rel="stylesheet">
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
     <title>Jewelry PHP</title>
 </head>
 
 <body>
-    <?php include './includes/header.php'; ?>
     <main>
         <div class="products">
             <?php
